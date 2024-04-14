@@ -12,12 +12,17 @@ const config: Config = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "custom-radial": "radial-gradient(circle at center center, #131fa8 0%, #5527f5 50%, #9b60eb 100%)",
       },
       colors: {
-        'button-color': '#ff6c83',
+        'button-color': '#9b60eb',
+        'tag-color': '#cfcfcf',
       }
     },
   },
-  plugins: [],
+  plugins: [require("daisyui")],
+  daisyui:{
+    themes: ["dracula", "winter"],
+  },
 };
 export default config;
