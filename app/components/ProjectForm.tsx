@@ -23,7 +23,7 @@ function ProjectForm() {
         <textarea
           name="projectDescription"
           id="projectDescription"          
-          rows = "4" 
+          rows = {4} 
           className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 text-black"
           required
         ></textarea>
